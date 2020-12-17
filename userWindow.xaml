@@ -92,7 +92,7 @@
 
         <Button Name="AjoutProduit" Content="Aj. un produit" Margin="10,475,10,10" HorizontalAlignment="Left" VerticalAlignment="Top" Click="AjoutProduit_Click" ></Button>
         <Button Name="ModifProduit" Content="Appliquer Modif." Margin="150,475,10,10" HorizontalAlignment="Left" VerticalAlignment="Top" ></Button>
-        <Button Name="SupprProduit" Content="Suppr. un produit" Margin="300,475,10,10" HorizontalAlignment="Left" VerticalAlignment="Top"  ></Button>
+        <Button Name="SupprProduit" Content="Suppr. un produit" Margin="300,475,10,10" HorizontalAlignment="Left" VerticalAlignment="Top" Click="SupprProduit_Click"  ></Button>
         <Button Name="RefreshProduit" Content="Refresh" Margin="460,475,10,10" HorizontalAlignment="Left" VerticalAlignment="Top"  ></Button>
 
         <DataGrid Name="GridUserProduit" ItemsSource="{Binding}" AutoGenerateColumns="false" HorizontalAlignment="Left" Height="200" Margin="10,48,10,10" VerticalAlignment="Bottom" MinWidth="764" >

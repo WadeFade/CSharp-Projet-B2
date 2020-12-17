@@ -64,7 +64,8 @@
                                 </DataGrid>
                                 <Button Name="AjoutProduit" Content="Ajouter un produit" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="12" Click="AjoutProduit_Click"/>
                                 <Button Name="ModifProduit" Content="Modifier un produit" HorizontalAlignment="Left" Margin="170,8,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="12"/>
-                                <Button Name="SupprProduit" Content="Supprimer un produit" HorizontalAlignment="Left" Margin="330,8,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="12"/>
+                                <Button Name="SupprProduit" Content="Supprimer un produit" HorizontalAlignment="Left" Margin="330,8,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="12" Click="SupprProduit_Click"/>
+                                <Button Name="RefreshProduit" Content="Refresh" HorizontalAlignment="Right" Margin="0,8,10,0" VerticalAlignment="Top" Width="80" Height="30" FontSize="12" Click="RefreshProduit_Click" />
                             </Grid>
                         </TabItem>
 

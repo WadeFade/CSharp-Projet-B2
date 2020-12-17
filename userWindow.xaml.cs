@@ -17,7 +17,7 @@ using BidCardCoin.ClassVM;
 
 namespace BidCardCoin
 {
-    
+
     public partial class userWindow : Window
     {
         UtilisateurVM pToShow;
@@ -93,7 +93,7 @@ namespace BidCardCoin
             AdresseORM.insertAdresse(myAdresse, pToShow.idPersonneProperty);
             GridUserAdresses.Items.Refresh();
             appliquerAdresseContexte();
-            
+
         }
         private void AjoutProduit_Click(object sender, RoutedEventArgs e)
         {
@@ -108,6 +108,7 @@ namespace BidCardCoin
             UtilisateurORM.updateUtilisateur((UtilisateurVM)pToShow);
         }
 
+        // Pour supprimer l'association entre l'adresse et l'utilisateur
         private void SupprAdresse_Click(object sender, RoutedEventArgs e)
         {
             if (GridUserAdresses.SelectedItem is AdresseVM)
@@ -116,6 +117,18 @@ namespace BidCardCoin
                 pToShow.adressePersonneProperty.Remove(toRemove);
                 GridUserAdresses.Items.Refresh();
                 AdresseORM.supprimerPersonneAdresse(toRemove, pToShow.idPersonneProperty);
+            }
+        }
+
+        // Pour supprimer le produit
+        private void SupprProduit_Click(object sender, RoutedEventArgs e)
+        {
+            if (GridUserProduit.SelectedItem is ProduitVM)
+            {
+                ProduitVM toRemove = (ProduitVM)GridUserProduit.SelectedItem;
+                pToShow.produitsProperty.Remove(toRemove);
+                GridUserProduit.Items.Refresh();
+                ProduitORM.supprimerProduit(toRemove);
             }
         }
 

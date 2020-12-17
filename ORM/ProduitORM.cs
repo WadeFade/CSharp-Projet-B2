@@ -45,6 +45,11 @@ namespace BidCardCoin.ORM
                 p.nbInvenduProperty, p.idLotProperty, p.idUtilisateurProperty, p.idStockageProperty)); ;
         }
 
+        public static void supprimerProduit(ProduitVM pr)
+        {
+            ProduitDAO.supprimerProduit(pr.idProduitProperty);
+        }
+
         // Pour récupérer la liste des Produits grâce à l'id d'un utilisateur
         public static ObservableCollection<ProduitVM> getProduitByIdUtilisateur(string idUtilisateur)
         {

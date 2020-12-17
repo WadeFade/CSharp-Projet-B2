@@ -191,15 +191,35 @@ namespace BidCardCoin
             }
         }
 
+        // Pour supprimer un Produit
+        private void SupprProduit_Click(object sender, RoutedEventArgs e)
+        {
+            if (GridProduit.SelectedItem is ProduitVM)
+            {
+                ProduitVM toRemove = (ProduitVM)GridProduit.SelectedItem;
+                lProduits.Remove(toRemove);
+                GridProduit.Items.Refresh();
+                ProduitORM.supprimerProduit(toRemove);
+            }
+        }
+
         // Fonctions de REFRESH
+        // Reload les utilisateurs
         private void RefreshUtilisateur_Click(object sender, RoutedEventArgs e)
         {
             loadUtilisateurs();
         }
 
+        // Reload les commissaires
         private void RefreshCommissaire_Click(object sender, RoutedEventArgs e)
         {
             loadCommissaires();
+        }
+        
+        // Reload les produits
+        private void RefreshProduit_Click(object sender, RoutedEventArgs e)
+        {
+            loadProduits();
         }
 
         // Pour aller sur la page de modification d'un utilisateur
