@@ -41,7 +41,6 @@ namespace BidCardCoin
             adressePersonne = new ObservableCollection<AdresseVM>();
             produits = new ObservableCollection<ProduitVM>();
         }
-
         public UtilisateurVM(string idPersonne, string idUtilisateur,
             string nomPersonne, string prenomPersonne, DateTime dateNaissance,
             string email, string password, string telephone, bool verifIdentite, int modePaiement,

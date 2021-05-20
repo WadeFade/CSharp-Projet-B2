@@ -166,7 +166,7 @@
                                 <Button Name="RefreshUtilisateur" Content="Refresh" HorizontalAlignment="Right" Margin="0,8,10,0" VerticalAlignment="Top" Width="80" Height="30" FontSize="12" Click="RefreshUtilisateur_Click"/>
                             </Grid>
                         </TabItem>
-
+<!-- 
                         <TabItem Header="LieuVente" Margin="0,-2,-59,0" HorizontalAlignment="Right" Width="85">
                             <Grid Background="#FFE5E5E5" Margin="-2,-2,-3,0" HorizontalAlignment="Stretch">
                                 <DataGrid Name="GridLieuV"  HorizontalAlignment="Stretch" MinHeight="310" Margin="10,48,10,0" VerticalAlignment="Top" MinWidth="764" >
@@ -187,11 +187,11 @@
                                 <Button Name="SupprEnchere"  Content="Supprimer une enchère" HorizontalAlignment="Left" Margin="330,8,0,0" VerticalAlignment="Top" Width="160" Height="30" FontSize="12"/>
                             </Grid>
                         </TabItem>
-
+-->
                     </TabControl>
                 </Grid>
             </TabItem>
-
+            <!--
             <TabItem Header="Vente" Margin="0,-5,-39,0" HorizontalAlignment="Left" Width="50">
                 <Grid Background="#FFE5E5E5" Margin="-2,-2,-2,-2">
                     <materialDesign:Card Padding="8" Margin="8" Height="50" VerticalAlignment="Top">
@@ -205,6 +205,7 @@
                     
                 </Grid>
             </TabItem>
+            -->
         </TabControl>
     </Grid>
 </Window>
