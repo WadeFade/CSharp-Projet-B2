@@ -21,20 +21,20 @@ namespace BidCardCoin
             if (connection == null) //  Si la connexion est déjà établi, il ne la refera pas 
             {
                 // Pour environnement de développement
-                
+                /*
                 server = "localhost";
                 database = "mathis_gauthier";
                 uid = "root";
                 password = "";
-               
+               */
 
                // Pour environnement de production (MySQL / MariaDB)
-               /*
+               
                 server = "172.16.2.7";
                 database = "mathis_gauthier";
                 uid = "mathis_gauthier";
                 password = "Epsi2021!";
-               */
+               
 
                 // Pour environnement de production (SQL Server)
                 /*
